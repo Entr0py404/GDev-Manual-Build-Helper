@@ -1,0 +1,1 @@
+GDev Manual Build Helper
