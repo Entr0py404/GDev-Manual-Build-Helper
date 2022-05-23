@@ -89,7 +89,7 @@ Partial Class Form1
         Me.Label_DagDrop.Name = "Label_DagDrop"
         Me.Label_DagDrop.Size = New System.Drawing.Size(352, 23)
         Me.Label_DagDrop.TabIndex = 11
-        Me.Label_DagDrop.Text = "Drag Drop Directory Here!"
+        Me.Label_DagDrop.Text = "Drag && Drop Package Directory Here"
         Me.Label_DagDrop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label_PackageDirectory

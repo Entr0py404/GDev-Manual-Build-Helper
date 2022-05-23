@@ -35,14 +35,14 @@ Partial Class Form2
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.Panel_GameJSONFile = New System.Windows.Forms.Panel()
+        Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
+        Me.RectangleShape1 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.Panel_OutputDirectory = New System.Windows.Forms.Panel()
+        Me.ShapeContainer2 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
+        Me.RectangleShape2 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.RadioButton_Electron = New System.Windows.Forms.RadioButton()
         Me.RadioButton_Cordova = New System.Windows.Forms.RadioButton()
         Me.RadioButton_Facebook = New System.Windows.Forms.RadioButton()
-        Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
-        Me.RectangleShape1 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
-        Me.RectangleShape2 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
-        Me.ShapeContainer2 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.Panel_GameJSONFile.SuspendLayout()
         Me.Panel_OutputDirectory.SuspendLayout()
         Me.SuspendLayout()
@@ -76,6 +76,7 @@ Partial Class Form2
         Me.TextBox_GameJSONFile.Name = "TextBox_GameJSONFile"
         Me.TextBox_GameJSONFile.Size = New System.Drawing.Size(296, 13)
         Me.TextBox_GameJSONFile.TabIndex = 2
+        Me.ToolTip1.SetToolTip(Me.TextBox_GameJSONFile, "You can drag & drop a game json file here.")
         '
         'TextBox_OutputDirectory
         '
@@ -86,6 +87,7 @@ Partial Class Form2
         Me.TextBox_OutputDirectory.Name = "TextBox_OutputDirectory"
         Me.TextBox_OutputDirectory.Size = New System.Drawing.Size(296, 13)
         Me.TextBox_OutputDirectory.TabIndex = 3
+        Me.ToolTip1.SetToolTip(Me.TextBox_OutputDirectory, "You can drag & drop a directory here.")
         '
         'Button_Export
         '
@@ -113,6 +115,7 @@ Partial Class Form2
         Me.Button_SelectGameJSONFile.Size = New System.Drawing.Size(56, 24)
         Me.Button_SelectGameJSONFile.TabIndex = 5
         Me.Button_SelectGameJSONFile.Text = "..."
+        Me.ToolTip1.SetToolTip(Me.Button_SelectGameJSONFile, "You can drag & drop a game json file here.")
         Me.Button_SelectGameJSONFile.UseVisualStyleBackColor = False
         '
         'Button_SelectOutputDirectory
@@ -127,11 +130,17 @@ Partial Class Form2
         Me.Button_SelectOutputDirectory.Size = New System.Drawing.Size(56, 24)
         Me.Button_SelectOutputDirectory.TabIndex = 6
         Me.Button_SelectOutputDirectory.Text = "..."
+        Me.ToolTip1.SetToolTip(Me.Button_SelectOutputDirectory, "You can drag & drop a directory here.")
         Me.Button_SelectOutputDirectory.UseVisualStyleBackColor = False
         '
         'OpenFileDialog1
         '
         Me.OpenFileDialog1.Filter = "json files (*.json)|*.json"
+        '
+        'ToolTip1
+        '
+        Me.ToolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info
+        Me.ToolTip1.ToolTipTitle = "Hint"
         '
         'Panel_GameJSONFile
         '
@@ -145,6 +154,29 @@ Partial Class Form2
         Me.Panel_GameJSONFile.Size = New System.Drawing.Size(392, 56)
         Me.Panel_GameJSONFile.TabIndex = 7
         '
+        'ShapeContainer1
+        '
+        Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
+        Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
+        Me.ShapeContainer1.Name = "ShapeContainer1"
+        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape1})
+        Me.ShapeContainer1.Size = New System.Drawing.Size(392, 56)
+        Me.ShapeContainer1.TabIndex = 6
+        Me.ShapeContainer1.TabStop = False
+        '
+        'RectangleShape1
+        '
+        Me.RectangleShape1.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.RectangleShape1.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
+        Me.RectangleShape1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.RectangleShape1.CornerRadius = 3
+        Me.RectangleShape1.FillColor = System.Drawing.Color.WhiteSmoke
+        Me.RectangleShape1.FillGradientColor = System.Drawing.Color.WhiteSmoke
+        Me.RectangleShape1.Location = New System.Drawing.Point(8, 24)
+        Me.RectangleShape1.Name = "RectangleShape1"
+        Me.RectangleShape1.SelectionColor = System.Drawing.Color.Transparent
+        Me.RectangleShape1.Size = New System.Drawing.Size(312, 24)
+        '
         'Panel_OutputDirectory
         '
         Me.Panel_OutputDirectory.AllowDrop = True
@@ -156,6 +188,29 @@ Partial Class Form2
         Me.Panel_OutputDirectory.Name = "Panel_OutputDirectory"
         Me.Panel_OutputDirectory.Size = New System.Drawing.Size(392, 56)
         Me.Panel_OutputDirectory.TabIndex = 8
+        '
+        'ShapeContainer2
+        '
+        Me.ShapeContainer2.Location = New System.Drawing.Point(0, 0)
+        Me.ShapeContainer2.Margin = New System.Windows.Forms.Padding(0)
+        Me.ShapeContainer2.Name = "ShapeContainer2"
+        Me.ShapeContainer2.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape2})
+        Me.ShapeContainer2.Size = New System.Drawing.Size(392, 56)
+        Me.ShapeContainer2.TabIndex = 7
+        Me.ShapeContainer2.TabStop = False
+        '
+        'RectangleShape2
+        '
+        Me.RectangleShape2.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.RectangleShape2.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
+        Me.RectangleShape2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.RectangleShape2.CornerRadius = 3
+        Me.RectangleShape2.FillColor = System.Drawing.Color.WhiteSmoke
+        Me.RectangleShape2.FillGradientColor = System.Drawing.Color.WhiteSmoke
+        Me.RectangleShape2.Location = New System.Drawing.Point(8, 24)
+        Me.RectangleShape2.Name = "RectangleShape2"
+        Me.RectangleShape2.SelectionColor = System.Drawing.Color.Transparent
+        Me.RectangleShape2.Size = New System.Drawing.Size(312, 24)
         '
         'RadioButton_Electron
         '
@@ -186,63 +241,17 @@ Partial Class Form2
         Me.RadioButton_Facebook.Text = "Facebook"
         Me.RadioButton_Facebook.UseVisualStyleBackColor = True
         '
-        'ShapeContainer1
-        '
-        Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
-        Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
-        Me.ShapeContainer1.Name = "ShapeContainer1"
-        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(392, 56)
-        Me.ShapeContainer1.TabIndex = 6
-        Me.ShapeContainer1.TabStop = False
-        '
-        'RectangleShape1
-        '
-        Me.RectangleShape1.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.RectangleShape1.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
-        Me.RectangleShape1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.RectangleShape1.CornerRadius = 3
-        Me.RectangleShape1.FillColor = System.Drawing.Color.WhiteSmoke
-        Me.RectangleShape1.FillGradientColor = System.Drawing.Color.WhiteSmoke
-        Me.RectangleShape1.Location = New System.Drawing.Point(8, 24)
-        Me.RectangleShape1.Name = "RectangleShape1"
-        Me.RectangleShape1.SelectionColor = System.Drawing.Color.Transparent
-        Me.RectangleShape1.Size = New System.Drawing.Size(312, 24)
-        '
-        'RectangleShape2
-        '
-        Me.RectangleShape2.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.RectangleShape2.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
-        Me.RectangleShape2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.RectangleShape2.CornerRadius = 3
-        Me.RectangleShape2.FillColor = System.Drawing.Color.WhiteSmoke
-        Me.RectangleShape2.FillGradientColor = System.Drawing.Color.WhiteSmoke
-        Me.RectangleShape2.Location = New System.Drawing.Point(8, 24)
-        Me.RectangleShape2.Name = "RectangleShape2"
-        Me.RectangleShape2.SelectionColor = System.Drawing.Color.Transparent
-        Me.RectangleShape2.Size = New System.Drawing.Size(312, 24)
-        '
-        'ShapeContainer2
-        '
-        Me.ShapeContainer2.Location = New System.Drawing.Point(0, 0)
-        Me.ShapeContainer2.Margin = New System.Windows.Forms.Padding(0)
-        Me.ShapeContainer2.Name = "ShapeContainer2"
-        Me.ShapeContainer2.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape2})
-        Me.ShapeContainer2.Size = New System.Drawing.Size(392, 56)
-        Me.ShapeContainer2.TabIndex = 7
-        Me.ShapeContainer2.TabStop = False
-        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(392, 153)
+        Me.Controls.Add(Me.Panel_OutputDirectory)
+        Me.Controls.Add(Me.Panel_GameJSONFile)
         Me.Controls.Add(Me.RadioButton_Facebook)
         Me.Controls.Add(Me.RadioButton_Cordova)
         Me.Controls.Add(Me.RadioButton_Electron)
-        Me.Controls.Add(Me.Panel_OutputDirectory)
-        Me.Controls.Add(Me.Panel_GameJSONFile)
         Me.Controls.Add(Me.Button_Export)
         Me.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
