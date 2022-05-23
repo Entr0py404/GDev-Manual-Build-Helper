@@ -51,11 +51,6 @@
         End Get
     End Property
 
-    Public Overrides ReadOnly Property ToolStripDropDownBackground As Color
-        Get
-            Return Color1
-        End Get
-    End Property
     Public Overrides ReadOnly Property ImageMarginGradientBegin As Color
         Get
             Return Color1
@@ -67,6 +62,12 @@
         End Get
     End Property
     Public Overrides ReadOnly Property ImageMarginGradientEnd As Color
+        Get
+            Return Color1
+        End Get
+    End Property
+
+    Public Overrides ReadOnly Property ToolStripDropDownBackground As Color
         Get
             Return Color1
         End Get
