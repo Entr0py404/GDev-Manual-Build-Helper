@@ -127,20 +127,20 @@ Partial Class Form1
         'MenuStrip1
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.MenuStrip1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolsToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(368, 25)
+        Me.MenuStrip1.Size = New System.Drawing.Size(368, 29)
         Me.MenuStrip1.TabIndex = 87
         '
         'ToolsToolStripMenuItem
         '
         Me.ToolsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GDExporterToolStripMenuItem, Me.VerifyNeededProgramsToolStripMenuItem})
-        Me.ToolsToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToolsToolStripMenuItem.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.ToolsToolStripMenuItem.Name = "ToolsToolStripMenuItem"
-        Me.ToolsToolStripMenuItem.Size = New System.Drawing.Size(51, 21)
+        Me.ToolsToolStripMenuItem.Size = New System.Drawing.Size(57, 25)
         Me.ToolsToolStripMenuItem.Text = "Tools"
         '
         'GDExporterToolStripMenuItem
@@ -148,7 +148,7 @@ Partial Class Form1
         Me.GDExporterToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.GDExporterToolStripMenuItem.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.GDExporterToolStripMenuItem.Name = "GDExporterToolStripMenuItem"
-        Me.GDExporterToolStripMenuItem.Size = New System.Drawing.Size(220, 22)
+        Me.GDExporterToolStripMenuItem.Size = New System.Drawing.Size(250, 26)
         Me.GDExporterToolStripMenuItem.Text = "GDExporter"
         '
         'VerifyNeededProgramsToolStripMenuItem
@@ -156,7 +156,7 @@ Partial Class Form1
         Me.VerifyNeededProgramsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.VerifyNeededProgramsToolStripMenuItem.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.VerifyNeededProgramsToolStripMenuItem.Name = "VerifyNeededProgramsToolStripMenuItem"
-        Me.VerifyNeededProgramsToolStripMenuItem.Size = New System.Drawing.Size(220, 22)
+        Me.VerifyNeededProgramsToolStripMenuItem.Size = New System.Drawing.Size(250, 26)
         Me.VerifyNeededProgramsToolStripMenuItem.Text = "Verify Needed Programs"
         '
         'Form1
